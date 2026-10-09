@@ -1,0 +1,15 @@
+﻿<!-- Snippets from the Windows agent ossec.conf. -->
+<ossec_config>
+
+  <!-- Sysmon event collection -->
+  <localfile>
+    <location>Microsoft-Windows-Sysmon/Operational</location>
+    <log_format>eventchannel</log_format>
+  </localfile>
+
+  <!-- File Integrity Monitoring (real time) -->
+  <syscheck>
+    <directories realtime="yes">C:\Users\YOUR_USER\Test</directories>
+  </syscheck>
+
+</ossec_config>
