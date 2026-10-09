@@ -1,0 +1,6 @@
+*.bak
+*.env
+secrets*
+ossec.conf
+eicar*
+*quarantine*.log
